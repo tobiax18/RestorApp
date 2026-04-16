@@ -1,0 +1,178 @@
+/* =====================
+   RESET
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  color: #333;
+}
+
+/* =====================
+   HEADER
+===================== */
+.header {
+  background: #111;
+  padding: 16px 0;
+}
+
+.header-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.nav button {
+  background: transparent;
+  border: 1px solid #444;
+  color: white;
+  padding: 6px 14px;
+  margin-left: 8px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.nav button:hover {
+  background: white;
+  color: black;
+}
+
+/* =====================
+   LAYOUT
+===================== */
+.container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* =====================
+   CARDS
+===================== */
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+  margin-bottom: 12px;
+}
+
+/* =====================
+   BUTTONS
+===================== */
+button {
+  background: #111;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #333;
+}
+
+/* =====================
+   MENU GRID
+===================== */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+/* =====================
+   PRODUCT
+===================== */
+.product-name {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.product-price {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* =====================
+   STATUS
+===================== */
+.status {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.status-pendiente { color: #f39c12; }
+.status-preparando { color: #2980b9; }
+.status-listo { color: #27ae60; }
+.status-entregado { color: #7f8c8d; }
+
+/* =====================
+   SELECT
+===================== */
+select {
+  padding: 6px;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+/* =====================
+   LOGIN
+===================== */
+.login {
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+}
+
+.login input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+/* =====================
+   CART SUMMARY
+===================== */
+.menu-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.cart {
+  position: sticky;
+  top: 20px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.cart-item button {
+  background: transparent;
+  color: red;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
