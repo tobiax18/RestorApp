@@ -23,16 +23,35 @@ Aplicación web para la gestión de un restaurante, que permite manejar usuarios
 
 ## 🏗️ Arquitectura del Proyecto
 
-El proyecto sigue una estructura modular:
-
 ```
-src/
+RestorApp/
 │
-├── components/   # Componentes reutilizables
-├── views/        # Vistas principales (pantallas)
-├── state/        # Estado global de la aplicación
-├── router/       # Manejo de navegación
-└── utils/        # Funciones auxiliares
+├── index.html          # Punto de entrada de la aplicación
+├── main.js             # Inicialización y arranque de la app
+├── styles.css          # Estilos globales
+│
+├── components/         # Componentes reutilizables UI
+│   ├── navbar.js
+│   ├── productCard.js
+│   └── userItem.js
+│
+├── views/              # Vistas principales (pantallas)
+│   ├── loginView.js
+│   ├── menuView.js
+│   ├── adminView.js
+│   └── ordersView.js
+│
+├── state/              # Estado global de la aplicación
+│   └── store.js
+│
+├── router/             # Sistema de navegación
+│   └── router.js
+│
+├── utils/              # Funciones auxiliares
+│   ├── storage.js
+│   └── helpers.js
+│
+└── README.md           # Documentación del proyecto
 ```
 
 ---
