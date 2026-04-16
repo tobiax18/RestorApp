@@ -26,32 +26,34 @@ Aplicación web para la gestión de un restaurante, que permite manejar usuarios
 ```
 RestorApp/
 │
-├── index.html          # Punto de entrada de la aplicación
-├── main.js             # Inicialización y arranque de la app
+├── index.html          # Entry point
 ├── styles.css          # Estilos globales
+├── README.md
 │
-├── components/         # Componentes reutilizables UI
-│   ├── navbar.js
-│   ├── productCard.js
-│   └── userItem.js
-│
-├── views/              # Vistas principales (pantallas)
-│   ├── loginView.js
-│   ├── menuView.js
-│   ├── adminView.js
-│   └── ordersView.js
-│
-├── state/              # Estado global de la aplicación
-│   └── store.js
-│
-├── router/             # Sistema de navegación
-│   └── router.js
-│
-├── utils/              # Funciones auxiliares
-│   ├── storage.js
-│   └── helpers.js
-│
-└── README.md           # Documentación del proyecto
+└── src/
+    │
+    ├── app.js          # Inicialización de la app
+    │
+    ├── components/     # Componentes reutilizables
+    │   ├── cartSummary.js
+    │   └── nav.js
+    │
+    ├── views/          # Vistas (pantallas)
+    │   ├── adminView.js
+    │   ├── loginView.js
+    │   ├── menuView.js
+    │   ├── myOrdersView.js
+    │   └── profileView.js
+    │
+    ├── router/         # Navegación
+    │   └── router.js
+    │
+    ├── state/          # Estado global
+    │   └── state.js
+    │
+    └── data/           # Persistencia / datos
+        ├── seed.js
+        └── storage.js
 ```
 
 ---
